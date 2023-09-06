@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webdev.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>PROJECT-Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(2, 4, 41);
+            color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+            font-size: 25px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(7, 7, 105);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: rgb(107, 215, 240);
+            font-size: 1.0rem;
+        }
+
+        .js {
+            color: rgb(126, 64, 212);
+        }
+
+        .firstSection {
+            display: flex;
+
+            justify-content: space-around;
+            margin: 20px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 50%;
+        }
+
+        .leftSection {
+            width: 34px;
+            font-size: 2.5rem;
+            margin-top: 23px;
+            margin-left: 30px;
+        }
+
+        .purple {
+            color: rgb(126, 64, 212);
+        }
+
+        .rightSection img {
+            width: 240px;
+            height: 290px;
+            margin: 20px 23px;
+
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(30, 30, 113);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondsection h1 {
+            font-size: 1.6rem;
+        }
+
+        .text-grey {
+            color: grey;
+            font-size: 0.9rem;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            display: flex;
+        }
+
+        .secondsection .boxv {
+            background: white;
+            width: 80vw;
+            height: 1px;
+            margin: 55px 25px 0 35px;
+            display: flex;
+
+        }
+
+        .thirdsection .vertical {
+            background-color: white;
+            height: 93px;
+            width: 1px;
+            margin: 0 71.25px 45px;
+            display: flex;
+        }
+
+        .image-top {
+            height: 55%;
+            position: relative;
+            top: -53px;
+            left: -20px;
+        }
+        .vertical-text {
+            margin: 0 -50px;
+            padding: 0;
+            font-size: 15px;
+            position: relative;
+            top: 93px;
+            width: 150px;
+        }
+        .vertical-desc {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 265px;
+            left: -50px;
+            list-style-type: none;
+            font-size: 11px;
+            text-align: start;
+            display: block;
+            color: rgb(117, 111, 191);
+            margin-bottom: 10px;
+        }
+        .vertical-desc details ul {
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            color: rgb(117, 111, 191);
+            font-size: 10px;
+            margin: 0 10px;
+        }
+        .footer {
+            display: flex;
+            margin: 275px 0 0 0;
+            background-color: #0e0e1a;
+            height: 33px;
+            padding: 7px 0 0 0;
+            justify-content: space-evenly;
+            font-size: 18px;
+        }
+        
+        .footer-end {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shreya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Shreya</span> and I am a passionate
+                <script class="leftSection" src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                <span class="purple" id="element"></span>
+            </div>
+            <div class="rightSection"><img src="webdev.png" alt=""></div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experiences</h1>
+            <div class="boxv"></div>
+        </section>
+        <section class="thirdsection">
+            <div class="vertical">
+                <img class="image-top" src="dev2.jpg" alt="dev2">
+                <div class="vertical-text">Python Programming Intern At <span class="purple">Codsoft</span>(20 July
+                    2023-20 August 2023)</div>
+                <div class="vertical-desc">
+                    <details>
+                        Projects Completed<br>
+                        <ul>
+                            <li>To Do List</li>
+                            <li>Password Generator</li>
+                            <li>Calculator</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="devb.jpg" alt="dev3" />
+                <div class="vertical-text">Web Development at <span class="purple">Codsoft</span>(10 August 2023-10
+                    September 2023)</div>
+                <div class="vertical-desc">
+                    <details>Projects Completed<br>
+                        <ul>
+                            <li>Portfolio</li>
+                            <li>Amazon-Clone Page</li>
+                            <li>Netflix-Clone</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="dev.jpg" alt="dev4" />
+                <div class="vertical-text">Web Development at <span class="purple">Data Software Pvt Ltd</span>(14
+                    August 2023 for 4 weeks)</div>
+                <div class="vertical-desc">
+                    <details>Projects Completed<br>
+                        <ul> <!--  font-size will be changed or margin would be adjusted later -->
+                            <li>Portfolio</li>
+                            <li>Landing Page</li>
+                            <li>Calculator</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="dev2.jpg" alt="dev2" />
+                <div class="vertical-text">Web Development at <span class="purple">TechnoHacks EduTech</span>(
+                    September 2023 for 4 weeks)</div>
+                <div class="vertical-desc">
+                    <details>Projects Completed<br>
+                        <ul> <!--  font-size will be changed or margin would be adjusted later -->
+                            <li>Portfolio</li>
+                            <li>Landing Page</li>
+                            <li>Calculator</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="devb.jpg" alt="dev3" />
+                <div class="vertical-text">Python Programming at<span class="purple">TechnoHacks EduTech</span>( 1
+                    September 2023 for 4 weeks)</div>
+                <div class="vertical-desc">
+                    <details>Projects Completed<br>
+                        <ul> <!--  font-size will be changed or margin would be adjusted later -->
+                            <li>Portfolio</li>
+                            <li>Amazon-Clone</li>
+                            <li>Netflix-Clone</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="dev.jpg" alt="dev4" />
+                <div class="vertical-text">Python intern at <span class="purple">Code Alpha</span>(1
+                    September 2023 for 4 weeks)</div>
+                <div class="vertical-desc">
+                    <details>Projects Completed<br>
+                        <ul> <!--  font-size will be changed or margin would be adjusted later -->
+                            <li>Portfolio</li>
+                            <li>Netflix-Clone Page</li>
+                            <li>Amazon-Clone Page</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="dev2.jpg" alt="dev2" />
+                <div class="vertical-text">Python Development at <span class="purple">OctaNet</span>(1
+                    September 2023 for 4 weeks)</div>
+                <div class="vertical-desc">
+                    <details>Projects Completed<br>
+                        <ul> <!--  font-size will be changed or margin would be adjusted later -->
+                            <li>Portfolio</li>
+                            <li>Landing Page</li>
+                            <li>Calculator</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-end">Copyright &#169; August-September 2023 | All rights reserved</div></div>
+    </footer>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Coder', 'Keen Learner'],
+            typeSpeed: 30,
+        });
+    </script>
+</body>
+
+</html>
